@@ -41,3 +41,4 @@ const nuevoPersonaje: PersonajeLOR = {
 curar (nuevoPersonaje,20);
 
 nuevoPersonaje.mostrarHp();
+
