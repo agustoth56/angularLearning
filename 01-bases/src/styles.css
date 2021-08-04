@@ -1,5 +1,5 @@
 * {
-    font-family: Helvetica, Arial, sans-serif;
+    font-family: Futura, Helvetica, Arial, sans-serif;
     font-weight: 200;
   }
   
@@ -25,6 +25,7 @@
     margin-right: 5px;
     margin-left: 5px;
     padding: 5px 10px;
+    text-transform: uppercase;
   }
   
   button:hover {
@@ -43,3 +44,28 @@
   li{
     list-style: none;
   }
+
+  .row{
+    display: flex;
+  }
+
+  .col{
+    flex-grow: 1;
+    padding: 5px;
+  }
+  
+  input{
+    display: block;
+    margin: 5px;
+    padding: 5px;
+    border: 0;
+    outline: none;
+  }
+
+  input[type=number]::-webkit-inner-spin-button, 
+  input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none; 
+    margin: 0; 
+  }
+
+  input[type=number] { -moz-appearance:textfield; }
