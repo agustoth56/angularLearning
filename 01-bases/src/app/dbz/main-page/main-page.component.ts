@@ -21,8 +21,8 @@ export class MainPageComponent {
   ];
 
   nuevo: Personaje = {
-    nombre: 'pepe',
-    poder : 1000
+    nombre: '',
+    poder : 0
   }
 
 }
