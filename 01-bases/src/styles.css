@@ -28,7 +28,8 @@
   }
   
   button:hover {
-    background-color: #3e4144;
+    background-color: grey;
+    color: black;
   }
   
   button:focus{ 
@@ -37,4 +38,8 @@
   
   .p-1 {
     padding: 1px;
+  }
+
+  li{
+    list-style: none;
   }
