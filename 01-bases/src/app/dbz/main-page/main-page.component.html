@@ -4,17 +4,16 @@
 <div class="row">
 
     <div class="col">
-        <h3>Personajes</h3>
+        <!-- <h3>Personajes</h3>
         <hr>
         <ul>
-            <li>Krillin - 700</li>
-            <li>Goku - 15,000</li>
-            <li>Vegetta - 8,500</li>
-        </ul>
+            <li *ngFor="let personaje of personajes"> {{ personaje.nombre }} - {{ personaje.poder | number }} </li>
+        </ul> -->
+        <app-personajes></app-personajes>
     </div>
 
     <div class="col">
-        <h3>Agregar <small>{{ nuevo.nombre }}</small> - <small>{{ nuevo.poder }}</small></h3>
+        <h3>Agregar</h3>
         <hr>
 
         <form (ngSubmit)="agregar()">
