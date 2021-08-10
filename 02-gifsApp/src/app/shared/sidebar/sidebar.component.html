@@ -4,7 +4,7 @@
     <hr class="text-light">
 
     <div class="list-group list-reset">
-        <a href="#" class="list-group-item list-group-item-action" *ngFor="let query of historial"> {{query | titlecase}} </a>
+        <a href="#" class="list-group-item list-group-item-action" *ngFor="let query of historial" (click)="buscar(query)"> {{query | titlecase}} </a>
     </div>
 
 </div>
