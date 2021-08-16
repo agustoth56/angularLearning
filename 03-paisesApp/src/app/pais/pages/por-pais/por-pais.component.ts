@@ -23,7 +23,6 @@ buscar( termino: string){
   this.paisService.buscarPais(this.termino)
   .subscribe(
   (paises) => {
-    console.log(paises);
     this.paises = paises;
   },
   (err) =>{
@@ -34,7 +33,9 @@ buscar( termino: string){
 }
 
 sugerencias (termino: string){
+
   this.hayError = false;
+  this.buscar(termino);
 }
 
 }
