@@ -1,3 +1,13 @@
+<!-- <div *ngIf="pais===undefined; else divLoader" class="alert alert-danger">
+    No se ha encontrado ningun pais, por favor vuelva a intentarlo haciendo <a href="./"><strong>click aqui</strong></a>
+</div>
+
+<ng-template #divLoader>
+    <div *ngIf="!pais; else divPais" class="alert alert-info">
+        Espere por favor...
+    </div>
+</ng-template> -->
+
 <div *ngIf="!pais; else divPais" class="alert alert-info">
     Espere por favor...
 </div>
@@ -12,7 +22,7 @@
 
     <div class="col-4">
         <h3>Bandera</h3>
-        <img src="{{pais.flag}}" alt="`{{pais.demonym}} Flag`" class="img-thumbnail">
+        <img src="{{pais.flag}}" alt="`{{pais.demonym}} Flag`" title="{{pais.demonym}} Flag" class="img-thumbnail">
     </div>
     <div class="col">
         <h3>Informacioin</h3>
