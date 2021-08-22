@@ -1,3 +1,14 @@
-<h1>{{nombre | uppercase}}</h1>
+<div class="text-layout">
+    <h2>{{nombre | uppercase}}</h2>
+    <button pButton label="Cambiar Nombre" icon="pi pi-check" iconPos="right" class="p-button-success" (click)="mostrarNombre()"></button>
 
-<button (click)="mostrarNombre()">nombre</button>
+    <hr>   
+    
+    <p-card [header]="nombre | uppercase">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde itaque ullam quibusdam praesentium. Libero eos quod quaerat alias minima maxime reprehenderit amet voluptates et enim officiis nisi quibusdam, ratione eligendi.
+    </p-card>
+
+
+</div>
+
+<app-menu></app-menu>
