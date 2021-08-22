@@ -6,4 +6,7 @@ html, body{
 
 .text-layout{
     color: var(--text-color);
+    background-color: var(--surface-c);
+    margin: 15px 0;
+    padding: 15px;
 }
