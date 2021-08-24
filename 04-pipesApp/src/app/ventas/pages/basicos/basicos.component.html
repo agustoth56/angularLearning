@@ -6,18 +6,65 @@
 
     <div class="grid">
         <div class="col-4">
-            <p-card header="{{'Uppercase' | uppercase}}">
-                1
+            <p-card header="uppercase" [subheader]="nombreLower | uppercase">
+                Modificado: {{ nombreLower | uppercase}}
+                <br>
+                Original: {{ nombreLower }}
             </p-card>
         </div>
         <div class="col-4">
-            <p-card>
-                2
+            <p-card header="lowercase" [subheader]="nombreUpper | lowercase">
+                Modificado: {{ nombreUpper | lowercase}}
+                <br>
+                Original: {{ nombreUpper }}
             </p-card>
         </div>
         <div class="col-4">
-            <p-card>
-                3
+            <p-card header="titlecase" [subheader]="nombreCompleto | titlecase">
+                Modificado: {{ nombreCompleto | titlecase }}
+                <br>
+                Original: {{ nombreCompleto }}
+            </p-card>
+        </div>
+    </div>
+</div>
+
+<div class="text-layout p-row">
+    <h1>Date | Feche | Pipe</h1>
+    <p>
+        Pipe para mostar las fechas
+    </p>
+
+    <div class="grid">
+        <div class="col-6">
+            <p-card header="Lo que es">
+                <ul>
+                    <li>fecha</li>
+                    <li>fecha | date</li>
+                    <li>fecha | date:'short'</li>
+                    <li>fecha | date:'long'</li>
+                    <li>fecha | date:'dd/M/YY HH:mm'</li>
+                </ul>
+                <hr>
+                <ul>
+                    <li>fecha | date:'long':'GMT-3'</li>
+                </ul>
+            </p-card>
+        </div>        
+        <div class="col-6">
+            <p-card header="Lo que hace">
+                <ul>
+                    <li>{{ fecha }}</li>
+                    <li>{{ fecha | date }}</li>
+                    <li>{{ fecha | date:'short' }}</li>
+                    <li>{{ fecha | date:'long' }}</li>
+                    <li>{{ fecha | date:'dd/MM/YY HH:mm' }}</li>
+                </ul>
+                <hr>
+                <ul>
+                    <li>{{fecha | date:'long':'GMT-3' }}</li>
+                    <li>{{fecha | date:'long':'GMT-3':'en' }}</li>
+                </ul>
             </p-card>
         </div>
     </div>
